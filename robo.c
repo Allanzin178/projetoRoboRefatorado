@@ -83,15 +83,11 @@ Ponto Final(Caminho *C) {
 
     // Restrições
     Ponto Nulo = {INICIAL_X, INICIAL_Y, NULL};
-    if (C->N == 0)
+    if (C->N == 0 || C->N < 0)
     {
         return Nulo;
     }
 
-    if (C->N < 0)
-    {
-        return Nulo;
-    }
 
     // Função para andar
     andarRobo(C);
